@@ -142,8 +142,9 @@ video {
 }
 
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "segoe ui", Roboto, Helvetica, Arial, sans-serif;
-  background-color: #eff2f5;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "segoe ui", Roboto,
+ Helvetica, Arial, sans-serif;
+  background-color: #f8fafd;
 }
 
 .header-wapper-container {
@@ -404,7 +405,7 @@ body {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  transition: 4s;
+  transition: 1s;
   border-radius: 34px;
 }
 
@@ -420,7 +421,7 @@ body {
   left: 5px;
   bottom: 5px;
   background-color: white;
-  transition: 0.4s;
+  transition: 0.2s;
   border-radius: 50px;
 }
 
@@ -429,7 +430,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider::before {
-  transform: translateX(50px);
+  transform: translateX(25px);
 }
 
 .ktv-wst-p h2 {
@@ -572,6 +573,13 @@ input:checked + .slider::before {
 .box-general-content {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+=======
+>>>>>>> 8e2a17802d5b14b2748dbd05586da8d6c6e013c0
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -579,11 +587,15 @@ input:checked + .slider::before {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 93%;
+<<<<<<< HEAD
 =======
   align-items: center;
   justify-content: space-between;
   width: 95%;
 >>>>>>> 21b8c7fc370748f4bbbeac9f178e29c40b80e868
+=======
+>>>>>>> 430bdbc64a2471c6db803d85a081349d5c866ef9
+>>>>>>> 8e2a17802d5b14b2748dbd05586da8d6c6e013c0
   margin: 4% 0;
 }
 
@@ -620,6 +632,11 @@ input:checked + .slider::before {
   width: 30px;
   height: 30px;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+}/*# sourceMappingURL=index.css.map */
+=======
+>>>>>>> 8e2a17802d5b14b2748dbd05586da8d6c6e013c0
 }
 
 main {
@@ -778,6 +795,10 @@ main {
   border-radius: 6px;
 }
 /*# sourceMappingURL=index.css.map */
+<<<<<<< HEAD
 =======
 }/*# sourceMappingURL=index.css.map */
 >>>>>>> 21b8c7fc370748f4bbbeac9f178e29c40b80e868
+=======
+>>>>>>> 430bdbc64a2471c6db803d85a081349d5c866ef9
+>>>>>>> 8e2a17802d5b14b2748dbd05586da8d6c6e013c0
