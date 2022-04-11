@@ -403,7 +403,7 @@ body {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  transition: 4s;
+  transition: 1s;
   border-radius: 34px;
 }
 
@@ -419,7 +419,7 @@ body {
   left: 5px;
   bottom: 5px;
   background-color: white;
-  transition: 0.4s;
+  transition: 0.2s;
   border-radius: 50px;
 }
 
@@ -428,7 +428,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider::before {
-  transform: translateX(50px);
+  transform: translateX(25px);
 }
 
 .ktv-wst-p h2 {
