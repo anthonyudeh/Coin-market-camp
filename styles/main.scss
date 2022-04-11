@@ -233,35 +233,49 @@ body {
   padding: 0 1%;
 }
 
-.btn {
-  width: 55px;
-  height: 29px;
-  border-radius: 20px;
-  background-color: $theme-blue-two;
+// .btn {
+//   width: 55px;
+//   height: 29px;
+//   border-radius: 20px;
+//   background-color: $theme-blue-two;
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   justify-content: end;
+//   padding: 0 3.8%;
+//   margin: 0 5px;
+// }
+
+// .inner-btn {
+//   width: 20px;
+//   height: 20px;
+//   border-radius: 50px;
+//   background-color: #ffff;
+// }
+
+// .svt-btn {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .svt-btn span {
+//   color: $color-neutral-six;
+//   font-weight: 600;
+// }
+
+.switch{
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  padding: 0 3.8%;
-  margin: 0 5px;
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  margin: 0 10ox;
 }
 
-.inner-btn {
-  width: 20px;
-  height: 20px;
-  border-radius: 50px;
-  background-color: #ffff;
-}
-
-.svt-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.svt-btn span {
-  color: $color-neutral-six;
-  font-weight: 600;
+.slider{
+  position: absolute;
+  cursor: pointer;
+  
 }
 
 .ktv-wst-p h2 {
