@@ -1,0 +1,440 @@
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "segoe ui", Roboto,
+    Helvetica, Arial, sans-serif;
+  background-color: $color-neutral-two;
+}
+
+.header-wapper-container {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.cryto-value-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px $color-neutral-two solid;
+}
+
+.crypto-value-detailed {
+  width: 81%;
+  padding: 1%;
+}
+
+.crypto-value-detailed ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.crypto-value-detailed ul li span {
+  font-size: 12px;
+  color: $color-neutral-six;
+  font-weight: 600;
+}
+
+.crypto-value-detailed ul li a {
+  font-size: 12px;
+}
+
+.language-currency {
+  width: 17%;
+  padding: 1%;
+}
+
+.language-currency ul {
+  display: flex;
+  font-size: 13px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.language-currency ul li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: center;
+  font-weight: 600;
+  color: $color-text-four;
+  padding: 5px 3px;
+}
+
+.language-currency ul li img {
+  width: 15px;
+  margin: 0 3px;
+}
+
+.language-currency ul li i {
+  margin: 0 5px;
+}
+
+.language-currency ul li:hover {
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.crypto-list-cont-diff {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  padding: 0.5%;
+}
+
+.crypto-list-cont-diff ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.crypto-list-cont-diff ul li {
+  margin: 0 10px;
+  list-style-type: none;
+  font-weight: 600;
+}
+
+.crypto-list-cont-diff ul li a:hover {
+  color: $theme-blue;
+}
+
+.crypto-list-cont-diff ul li a {
+  color: $color-text-three;
+  font-size: 14px;
+}
+
+.crypto-profile {
+  width: 22%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.crypto-profile img:last-of-type {
+  width: 30px;
+  height: 30px;
+}
+
+.crypto-profile input {
+  height: 40px;
+  padding: 1%;
+  border-color: transparent;
+  background-color: $color-neutral-two;
+  border-radius: 5px;
+  outline: transparent;
+}
+
+.crypto-profile input::placeholder {
+  color: $color-neutral-four;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.general-crypto-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $color-neutral-two;
+}
+
+.cry-vts {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: $color-neutral-four;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 18px;
+}
+
+.cry-vts p {
+  color: #fff;
+  font-weight: 800;
+  transform: translate(0, -0.5rem);
+}
+
+.cards-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  min-width: 20rem;
+  margin: 1%;
+  position: relative;
+}
+
+.card a img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card a {
+  display: block;
+}
+
+.youtube-play {
+  width: 68px;
+  height: 48px;
+  background-color: rgba($color: $color-text-two, $alpha: 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: absolute;
+  top: 50px;
+  left: 110px;
+  cursor: pointer;
+}
+
+.youtube-play:hover {
+  background-color: rgba($color: $color-text-two, $alpha: 0.9);
+}
+
+.youtube-play i {
+  color: #fff;
+}
+
+.ktu-a {
+  color: #58667e;
+}
+
+.ktu-p {
+  color: #000;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.wrapper-cont-two-Q {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.down-color {
+  color: $color-text-two;
+}
+
+.ktv-wst {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 1.3rem;
+  padding: 0 1%;
+}
+
+.btn {
+  width: 55px;
+  height: 29px;
+  border-radius: 20px;
+  background-color: $theme-blue-two;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 3.8%;
+  margin: 0 5px;
+}
+
+.inner-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background-color: #ffff;
+}
+
+.svt-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svt-btn span {
+  color: $color-neutral-six;
+  font-weight: 600;
+}
+
+.ktv-wst-p h2 {
+  font-size: 24px;
+}
+
+.ktv-wst-p p {
+  color: $color-neutral-six;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 50%;
+}
+
+.btn-container-info-on-graph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-top: 1.4rem;
+  padding: 1%;
+}
+
+.first-box {
+  width: 457px;
+  background-color: red;
+  border-radius: 8px;
+  min-height: 200px;
+}
+
+.diff-box-one {
+  position: absolute;
+  background-color: #fff;
+  z-index: 2;
+  top: 0;
+  box-shadow: $box-shadow 0px 4px 24px;
+  padding: 0 1%;
+}
+
+.diff-box-two {
+  position: absolute;
+  background-color: #fff;
+  z-index: 3;
+  right: 0;
+  top: 0;
+  box-shadow: #58667e14 0px 4px 24px;
+  padding: 0 1%;
+}
+
+.diff-box-three {
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  box-shadow: #58667e14 0px 4px 24px;
+  padding: 0 1%;
+}
+
+.ktv-epst {
+  display: flex;
+  align-items: center;
+  width: 38%;
+  justify-content: space-between;
+}
+
+.box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+.diff-case {
+  width: 92%;
+}
+
+.diff-case-two {
+  width: 43%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.diff-case-two img {
+  width: 17%;
+  object-fit: contain;
+  margin: 0 5px;
+}
+
+.diff-case-three {
+  width: 26%;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.diff-box-three img {
+  width: 25%;
+  object-fit: contain;
+}
+
+.box-header h2 {
+  font-size: 1.1rem;
+}
+
+.box-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.box-content img {
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+}
+
+.box-content h2 {
+  font-size: 12px;
+}
+
+.box-content span {
+  font-size: 15px;
+  color: $color-neutral-five;
+}
+
+.box-content h3 {
+  font-size: 12px;
+  color: #808a9d;
+  letter-spacing: 1px;
+}
+
+.box-general-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin: 4% 0;
+}
+
+.main-box-content {
+  margin-top: 1.5rem;
+}
+
+.diff-box-content {
+  width: 100%;
+}
+
+.up-rate span i {
+  color: #16c784;
+  margin: 0 4px;
+}
+
+.up-rate span {
+  color: #16c784;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.down-color span i {
+  margin: 0 4px;
+}
+
+.value-fig a {
+  color: #000;
+  font-weight: 600;
+}
+
+.ktv-epst img {
+  width: 30px;
+  height: 30px;
+}
