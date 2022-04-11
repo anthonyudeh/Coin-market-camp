@@ -253,22 +253,22 @@ body {
 //   background-color: #ffff;
 // }
 
-.svt-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+// .svt-btn {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
 
-.svt-btn span {
-  color: $color-neutral-six;
-  font-weight: 600;
-}
+// .svt-btn span {
+//   color: $color-neutral-six;
+//   font-weight: 600;
+// }
 
 .switch{
   position: relative;
   display: inline-block;
-  width: 100px;
-  height: 60px;
+  width: 70px;
+  height: 40px;
   margin: 0 10px;
 }
 
@@ -292,22 +292,22 @@ body {
 .slider::before{
   position: absolute;
   content: "";
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
   left: 5px;
   bottom: 5px;
   background-color: white;
-  transition: 0.4s;
+  transition: 1s;
   border-radius: 50px;
 
 }
 
 input:checked + .slider{
-  background-color: #ff278c;
+  background-color: blue;
 }
 
 input:checked + .slider::before{
-  transform: translateX(50px);
+  transform: translateX(20px);
 }
 .ktv-wst-p h2 {
   font-size: 24px;
