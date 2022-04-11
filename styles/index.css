@@ -7,6 +7,7 @@ p {
   font-weight: 500;
   color: #000;
   font-size: 14px;
+  margin: 0;
 }
 
 html {
@@ -144,7 +145,7 @@ video {
 
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "segoe ui", Roboto, Helvetica, Arial, sans-serif;
-  background-color: #eff2f5;
+  background-color: #f8fafd;
 }
 
 .header-wapper-container {
@@ -527,14 +528,16 @@ body {
   position: relative;
   width: 100%;
   margin-top: 1.4rem;
-  padding: 1%;
+  max-width: 1330px;
+  margin: 1.8% auto;
+  min-height: 180px;
 }
 
 .first-box {
   width: 457px;
   background-color: red;
   border-radius: 8px;
-  min-height: 200px;
+  min-height: 180px;
 }
 
 .diff-box-one {
@@ -640,7 +643,7 @@ body {
 }
 
 .box-header h2 {
-  font-size: 1.1rem;
+  font-size: 14px;
 }
 
 .box-content {
@@ -686,7 +689,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 95%;
+  width: 93%;
   margin: 4% 0;
 }
 
@@ -728,5 +731,161 @@ body {
 .ktv-epst img {
   width: 30px;
   height: 30px;
+}
+
+main {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.watch-cont p {
+  font-size: 12px;
+  margin: 0 2px;
+  font-weight: 500;
+}
+
+.watch-cont i {
+  color: #000;
+}
+
+.watch-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eff2f5;
+  margin: 0 3px;
+  padding: 5px 3px;
+  border-radius: 6px;
+}
+
+.first-div-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list-items-ordered li {
+  display: inline-block;
+  margin: 0 6px;
+  padding: 4px 3px;
+  border-radius: 6px;
+}
+
+.list-items-ordered li:hover {
+  background-color: #eff2f5;
+}
+
+.list-items-ordered li a {
+  color: #58667e;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.list-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tst-ogg p {
+  margin: 0 1rem;
+}
+
+.list-items-ordered li:first-of-type a {
+  color: #3861fb;
+  background-color: #f0f6ff;
+  padding: 6px 7px;
+  font-weight: 600;
+}
+
+.list-items-ordered li:first-of-type:hover {
+  background-color: transparen;
+}
+
+.second-div-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ket-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2px;
+  padding: 0 5px;
+}
+
+.ket-div span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px 5px;
+  font-weight: 600;
+  border-radius: 6px;
+  background-color: #eff2f5;
+}
+
+.ket-div span i {
+  margin: 0 3px;
+}
+
+.ket-div p {
+  color: #58667e;
+  margin: 0 3px;
+}
+
+.diff-ket-div {
+  background-color: #eff2f5;
+  padding: 5px 5px;
+  border-radius: 6px;
+}
+
+.diff-ket-div p {
+  font-weight: 600;
+  color: #000;
+}
+
+.diff-ket-div i {
+  color: #a6b0c3;
+  margin: 0 3px;
+}
+
+.diff-ket-divv {
+  background-color: #eff2f5;
+  padding: 5px 5px;
+  border-radius: 6px;
+}
+
+.diff-ket-divv i {
+  margin: 0 3px;
+}
+
+.diff-i {
+  background-color: #fff;
+  padding: 3px;
+  border-radius: 6px;
 }
 /*# sourceMappingURL=index.css.map */
