@@ -25,23 +25,18 @@
 // litag.addEventlistner("click", fetchUsers)
 
 //////////////  display highlight on cliclk ////////////////
-const hiddenDiv = document.querySelector("btn-container-info-on-graph");
-const btnSwitch = document.querySelector("switch")
 
-// btnSwitch.onclick = function () {
-//   if (hiddenDiv.style.display !== "none") {
-//     hiddenDiv.style.display = "none";
-//   } else {
-//     hiddenDiv.style.display = "flex";
-//   }
-// }
+const hideNShow = document.getElementById("btn-container-info-on-graph");
+const btnSwitch = document.getElementById("switch")
 
-const hideNShow = btnSwitch
 console.log(hideNShow);
 function myClick(){
-    if(hiddenDiv.style.display === "none"){
-        hiddenDiv.style.display = "flex"
+    if(hideNShow.style.display === "none"){
+        hideNShow.style.display = "flex"
     }else{
-        hiddenDiv.style.display = "none";
+        hideNShow.style.display = "none";
     }
 }
+
+////////////////                                //////////////////////
+// https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest

@@ -264,7 +264,7 @@ body {
   font-weight: 600;
 }
 
-.switch {
+#switch {
   position: relative;
   display: inline-block;
   width: 58px;
@@ -318,7 +318,7 @@ input:checked + .slider::before {
   font-size: 16px;
 }
 
-.btn-container-info-on-graph {
+#btn-container-info-on-graph {
   display: flex;
   align-items: center;
   justify-content: center;
