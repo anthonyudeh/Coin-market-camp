@@ -2,7 +2,6 @@ const litag = document.getElementsByTagName(li)
 
 const fetchUsers = () => {
     return async () => {
-    // dispatch(fetchUserRequest);
     try {
         const response = await axios.get(
             "https://cors-any-where-code-mena.herokuapp.com/https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest",

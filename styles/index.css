@@ -572,11 +572,6 @@ input:checked + .slider::before {
 
 .box-general-content {
   display: flex;
-<<<<<<< HEAD
-  align-items: center;
-  justify-content: space-between;
-  width: 95%;
-=======
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -584,7 +579,6 @@ input:checked + .slider::before {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 93%;
->>>>>>> 430bdbc64a2471c6db803d85a081349d5c866ef9
   margin: 4% 0;
 }
 
@@ -620,9 +614,6 @@ input:checked + .slider::before {
 .ktv-epst img {
   width: 30px;
   height: 30px;
-<<<<<<< HEAD
-}/*# sourceMappingURL=index.css.map */
-=======
 }
 
 main {
@@ -781,4 +772,3 @@ main {
   border-radius: 6px;
 }
 /*# sourceMappingURL=index.css.map */
->>>>>>> 430bdbc64a2471c6db803d85a081349d5c866ef9
