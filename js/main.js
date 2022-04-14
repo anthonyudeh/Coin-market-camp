@@ -15,7 +15,7 @@
 //             //   dispatch(fetchUserSuccess(response));
 //     } catch (err) {
 //         //   dispatch(fetchUserFailure);
-//         console.log(err); 
+//         console.log(err);
 //     }
 //     console.log(reponse)
 // };
@@ -27,16 +27,41 @@
 //////////////  display highlight on cliclk ////////////////
 
 const hideNShow = document.getElementById("btn-container-info-on-graph");
-const btnSwitch = document.getElementById("switch")
+
 
 console.log(hideNShow);
-function myClick(){
-    if(hideNShow.style.display === "none"){
-        hideNShow.style.display = "flex"
-    }else{
-        hideNShow.style.display = "none";
-    }
+function myClick() {
+  if (hideNShow.style.display === "none") {
+    hideNShow.style.display = "flex";
+  } else {
+    hideNShow.style.display = "none";
+  }
 }
 
-////////////////                                //////////////////////
-// https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest
+////////////////       Fetching      //////////////////////
+var list = 
+
+const getTodoItems = async () => {
+  try {
+    const response = await window.axios.get(
+      "https://cors-any-where-code-mena.herokuapp.com/https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest",
+      {
+          headers: {
+               "X-CMC_PRO_API_KEY": "837459ce-5242-457a-82c9-af52040c2776",
+          }
+      }
+    );
+
+    const value = response.data.data
+
+    const value2 = value.map(o => o.name)
+    
+   console.log(value2);
+  } catch (errors) {
+    console.error(errors);
+  }
+};
+
+
+
+getTodoItems()
