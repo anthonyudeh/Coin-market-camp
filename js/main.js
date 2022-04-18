@@ -82,4 +82,9 @@ const getTodoItems = async () => {
 
 getTodoItems();
 
-////////////////////   spinner /////////////////////////
+const onCall = () => {
+  window.axois.get(
+    "https://pro-api.coinmarketcap.com/v1/cryptocurrency/trending/gainers-losers"
+  );
+}
+onCall()
