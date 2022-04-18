@@ -717,6 +717,7 @@ td h2 {
 td div h3 {
   font-size: 12px;
   margin: 0 2px;
+  font-weight: 700;
 }
 
 td h3 {
@@ -778,7 +779,7 @@ td {
 }
 
 tr:hover {
-  background-color: #cfd6e4;
+  background-color: rgba(207,214,228,0.2);
 }
 
 .pagination {
@@ -945,23 +946,145 @@ footer {
   overflow-x: scroll;
 }
 
-.ccpy div p{
+.ccpy div p {
   color: #58667e;
 }
 
-.list-tls-items{
+.list-tls-items {
   width: 100%;
   overflow-x: scroll;
 }
 
-.bCltOL{
+.bCltOL {
   filter: hue-rotate(85deg) saturate(80%) brightness(0.85);
 }
 
-.bad-graph{
+.bad-graph {
   filter: hue-rotate(300deg) saturate(210%) brightness(0.7) contrast(170%);
 }
 
+.mmdss {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.mmdss .tooltiptext {
+  visibility: hidden;
+  width: 370px;
+  background-color: #fff;
+  color: #fff ;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  right: -110px;
+  top: 25px;
+  box-shadow: 2px 2px 13px 2px rgba(0,0,0,0.5);
+}
+
+.mmdss:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltiptext-content p{
+  color: #58667e;
+}
+
+.tooltiptext-content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 2%;
+}
+
+.tooltiptext-one-content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 2%;
+}
+
+.vtx{
+  width: 80%;
+  height: 7px;
+  background-color: #eff2f5;
+  margin: 0.8rem 8px;
+ border-radius: 6px;
+}
+
+.vtxh{
+  width: 100%;
+  height: 7px;
+  background-color: #eff2f5;
+  margin: 0.8rem 0px;
+  border-radius: 6px;
+}
+
+.vtx-st{
+  width: 60%;
+  height: 7px;
+  background-color: #cfd6e4;
+  border-radius: 6px;
+}
+
+.vtx-s{
+  width: 50%;
+  height: 7px;
+  background-color: #cfd6e4;
+  border-radius: 6px;
+}
+
+.kllm{
+  text-align: left;
+}
+
+.dip{
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+}
+
+.one-e{
+  width: 80%;
+}
+
+.two-e, .eight-e{
+  width: 30%;
+}
+
+.three-e{
+  width: 93%;
+}
+
+.four-e{
+  width: 80%;
+}
+
+.five-e{
+  width: 5%;
+}
+
+.six-e{
+  width: 28%;
+}
+
+.seven-e{
+  width: 78%;
+}
+
+.nine-e{
+  width: 13%;
+}
+
+.ten-e{
+  width: 50%;
+}
+
+.eleven-e{
+  width: 3.1%;
+}
 /***** M E D I A ******* Q U E R Y *****/
 
 @media screen and (max-width: 1116px) {
@@ -985,7 +1108,7 @@ footer {
     margin: 0 10px;
   }
 
-  .serch-menu i:first-of-type{
+  .serch-menu i:first-of-type {
     margin: 0 10px;
   }
 
@@ -1009,29 +1132,28 @@ footer {
     font-size: 12px;
   }
 
-  .general-odogwu{
+  .general-odogwu {
     flex-direction: column;
     align-items: baseline;
   }
 
-  .main-foot-list{
+  .main-foot-list {
     width: 100%;
     flex-wrap: wrap;
   }
 
-  .general-odogwu img{
+  .general-odogwu img {
     width: 31%;
     margin-bottom: 1.3rem;
   }
-  
-  .foot-list{
+
+  .foot-list {
     min-width: 25%;
   }
-  
+
   // .ccpy{
   //   flex-direction: column;
   // }
-
 }
 
 @media screen and (max-width: 992px) {
@@ -1070,88 +1192,86 @@ footer {
     margin-bottom: 1.5rem;
   }
 
-  .jex-box{
+  .jex-box {
     width: 100%;
   }
 
-  th span{
+  th span {
     display: none;
   }
 
-  .diff-camp-name{
+  .diff-camp-name {
     position: sticky;
     z-index: 100;
   }
 
-  .first-list-table{
+  .first-list-table {
     position: sticky;
     z-index: 100;
   }
 
-  .mmds, .last-days{
+  .mmds,
+  .last-days {
     min-width: 10rem;
   }
 
-  main{
+  main {
     overflow-x: scroll;
   }
 }
 
-
-@media screen and (max-width:782px){
-  .btn-container-info-on-graph{
+@media screen and (max-width: 782px) {
+  .btn-container-info-on-graph {
     display: none;
   }
 
-  section.diff-section{
+  section.diff-section {
     flex-direction: column;
   }
 
-  .first-section{
+  .first-section {
     width: 100%;
   }
 
-  .first-section input{
+  .first-section input {
     width: 100%;
   }
 
-  .button-cont{
+  .button-cont {
     width: 100%;
   }
 
-  .first-section button{
+  .first-section button {
     width: 100%;
   }
 
-  .ktv-wst{
+  .ktv-wst {
     align-items: baseline;
     flex-direction: column;
   }
 
-  .second-div-cont{
+  .second-div-cont {
     width: 51%;
     justify-content: end;
   }
 
-  .list-items{
+  .list-items {
     padding: 10px 5px;
   }
 
-  .svt-btn{
+  .svt-btn {
     display: none;
   }
 
-  .ktv-wst-p h2{
-     font-size: 20px;
+  .ktv-wst-p h2 {
+    font-size: 20px;
   }
 
-  .ktv-wst-p p{
+  .ktv-wst-p p {
     margin-bottom: 1.5rem;
     font-size: 14px;
   }
 }
 
-
-@media screen and (max-width:645px){
-  
+@media screen and (max-width: 645px) {
 }
