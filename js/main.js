@@ -12,12 +12,12 @@ function myClick() {
 }
 
 ////////////////       Fetching      //////////////////////
-// const spinner = document.getElementById("loader--spinner");
+const spinner = document.getElementById("loader--spinner");
 
 var list = document.querySelector("first-list-table diff-first-list-tle");
 
 const getTodoItems = async () => {
-  // spinner.style.display = "block";
+  spinner.style.display = "block";
   try {
     const response = await window.axios.get(
       "https://cors-any-where-code-mena.herokuapp.com/https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest",
@@ -28,7 +28,7 @@ const getTodoItems = async () => {
       }
     );
     const table = document.getElementById("table-inu");
-    // spinner.style.display = "none";
+    spinner.style.display = "none";
     const value = response.data.data;
     value.forEach((element) => {
       const { name, cmc_rank, circulating_supply, symbol } = element;
