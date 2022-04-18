@@ -1,5 +1,3 @@
-
-
 //////////////  display highlight on cliclk ////////////////
 
 const hideNShow = document.getElementById("btn-container-info-on-graph");
@@ -31,35 +29,37 @@ const getTodoItems = async () => {
     const value = response.data.data;
     console.log(value);
     value.forEach((element) => {
+      const { name, cmc_rank, circulating_supply} = element;
+      const 
       const a = `<tr>
             <td class="first-list-table diff-first-list-tle">
               <div><i class="fa-solid fa-star-of-david"></i></div>
-              <div>${element.cmc_rank}</div>
+              <div>${cmc_rank}</div>
             </td>
             <td class="camp-name diff-camp-name">
-              <img src="./images/1027.png" alt="" />
+             <img src="./images/1027.png" alt="" />
               <div class="name-class">
-                <h3>${element.name}</h3>
+                <h3>${name}</h3>
                 <p class="coin--shortname">${element.symbol}</p>
               </div>
               <span>Buy</span>
             </td>
-            <td class="mmds">$40,456.16</td>
+            <td class="mmds">${element.quote.USD.price.toFixed(2)}</td>
             <td class="drop mmds">
               <div><i class="fa-solid fa-caret-down"></i></i></div>
-              <p>1.13%</p>
+              <p>${element.quote.USD.percent_change_24h.toFixed(2)}</p>
             </td>
             <td class="drop mmds">
               <div><i class="fa-solid fa-caret-down"></i></div>
-              <p>11.95%</p>
+              <p>${element.quote.USD.percent_change_7d.toFixed(2)}</p>
             </td>
-            <td class="mmds">$767,443,826,543</td>
+            <td class="mmds">$ ${element.quote.USD.market_cap}</td>
             <td class="diff-td mmds">
               <h2>$34,702,116,388</h2>
               <h3>859,575 BTCBTC</h3>
             </td>
             <td class="mmds">
-              <h2>$34,702,116,388</h2>
+              <h2>$ ${circulating_supply}</h2>
               <div>
                 <div></div>
               </div>
@@ -80,7 +80,4 @@ const getTodoItems = async () => {
 
 getTodoItems();
 
-
-const history =  async () => {
-
-}
+const history = async () => {};
