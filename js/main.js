@@ -1,26 +1,83 @@
-const litag = document.getElementsByTagName(li)
+//////////////  display highlight on cliclk ////////////////
 
-const fetchUsers = () => {
-    return async () => {
-    // dispatch(fetchUserRequest);
-    try {
-        const response = await axios.get(
-            "https://cors-any-where-code-mena.herokuapp.com/https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest",
-            {
-                headers: {
-                    "X-CMC_PRO_API_KEY": "837459ce-5242-457a-82c9-af52040c2776",
-                },
-            }
-            );
-            console.log(response);
-            //   dispatch(fetchUserSuccess(response));
-    } catch (err) {
-        //   dispatch(fetchUserFailure);
-        console.log(err); 
-    }
-    console.log(reponse)
+const hideNShow = document.getElementById("btn-container-info-on-graph");
+
+console.log(hideNShow);
+function myClick() {
+  if (hideNShow.style.display === "none") {
+    hideNShow.style.display = "flex";
+  } else {
+    hideNShow.style.display = "none";
+  }
+}
+
+////////////////       Fetching      //////////////////////
+var list = document.querySelector("first-list-table diff-first-list-tle");
+
+const getTodoItems = async () => {
+  try {
+    const response = await window.axios.get(
+      "https://cors-any-where-code-mena.herokuapp.com/https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest",
+      {
+        headers: {
+          "X-CMC_PRO_API_KEY": "837459ce-5242-457a-82c9-af52040c2776",
+        },
+      }
+    );
+    const table = document.getElementById("table-inu");
+
+    const value = response.data.data;
+    console.log(value);
+    value.forEach((element) => {
+      const { name, cmc_rank, circulating_supply,symbol} = element;
+
+      const a = `<tr>
+            <td class="first-list-table diff-first-list-tle">
+              <div><i class="fa-solid fa-star-of-david"></i></div>
+              <div>${cmc_rank}</div>
+            </td>
+            <td class="camp-name diff-camp-name">
+             <img src="./images/1027.png" alt="" />
+              <div class="name-class">
+                <h3>${name}</h3>
+                <p class="coin--shortname">${symbol}</p>
+              </div>
+              <span>Buy</span>
+            </td>
+            <td class="mmds">$ ${element.quote.USD.price.toFixed(2)}</td>
+            <td class="drop mmds">
+              <div><i class="fa-solid fa-caret-down"></i></i></div>
+              <p>${element.quote.USD.percent_change_24h.toFixed(2)}</p>
+            </td>
+            <td class="drop mmds">
+              <div><i class="fa-solid fa-caret-down"></i></div>
+              <p>${element.quote.USD.percent_change_7d.toFixed(2)}</p>
+            </td>
+            <td class="mmds">$${element.quote.USD.market_cap.toFixed()} ${symbol}</td>
+            <td class="diff-td mmds">
+              <h2>$34,702,116,388</h2>
+              <h3>859,575 BTCBTC</h3>
+            </td>
+            <td class="mmds">
+              <h2>$ ${circulating_supply}</h2>
+              <div>
+                <div></div>
+              </div>
+            </td>
+            <td class="mmds">
+              <div class="bad-graph"><img src="./images/1.svg" alt=""></div>
+              <div></div>
+            </td>
+          </tr>
+`;
+      //   table.appendChild(a);
+      table.innerHTML += a;
+    });
+  } catch (errors) {
+    console.error(errors);
+  }
 };
 
-};
+getTodoItems();
 
-litag.addEventlistner("click", fetchUsers)
+const history = async () => {};
