@@ -1,28 +1,4 @@
-// const litag = document.getElementsByTagName(li)
 
-// const fetchUsers = () => {
-//     return async () => {
-//     try {
-//         const response = await axios.get(
-//             "https://cors-any-where-code-mena.herokuapp.com/https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest",
-//             {
-//                 headers: {
-//                     "X-CMC_PRO_API_KEY": "837459ce-5242-457a-82c9-af52040c2776",
-//                 },
-//             }
-//             );
-//             console.log(response);
-//             //   dispatch(fetchUserSuccess(response));
-//     } catch (err) {
-//         //   dispatch(fetchUserFailure);
-//         console.log(err);
-//     }
-//     console.log(reponse)
-// };
-
-// };
-
-// litag.addEventlistner("click", fetchUsers)
 
 //////////////  display highlight on cliclk ////////////////
 
@@ -53,11 +29,12 @@ const getTodoItems = async () => {
     const table = document.getElementById("table-inu");
 
     const value = response.data.data;
+    console.log(value);
     value.forEach((element) => {
       const a = `<tr>
             <td class="first-list-table diff-first-list-tle">
               <div><i class="fa-solid fa-star-of-david"></i></div>
-              <div>1</div>
+              <div>${element.cmc_rank}</div>
             </td>
             <td class="camp-name diff-camp-name">
               <img src="./images/1027.png" alt="" />
@@ -102,3 +79,8 @@ const getTodoItems = async () => {
 };
 
 getTodoItems();
+
+
+const history =  async () => {
+
+}
