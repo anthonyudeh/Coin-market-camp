@@ -2,12 +2,13 @@
 const menuBar = document.getElementsByClassName("fa-bars");
 const menuNav = document.getElementById("menu-navigation");
 
-// const displayNav = menuNav.style.display
-const  firstMenuBar = menuBar[0];
+const displayNav = menuNav.style.display
+ const  firstMenuBar = menuBar[0];
 firstMenuBar.addEventListener("click", () => {
-  // console.log(">>>>>>>>>", displayNav);
     menuNav.style.display = "block"
 })
+
+
 
 //////////////  display highlight on cliclk ////////////////
 
