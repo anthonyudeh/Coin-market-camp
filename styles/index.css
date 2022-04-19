@@ -1394,4 +1394,8 @@ footer {
   to {
     -webkit-transform: scale(1, 1);
   }
+}
+.menu-navigation {
+  background-color: #fff;
+  height: 100vh;
 }/*# sourceMappingURL=index.css.map */
