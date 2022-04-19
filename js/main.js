@@ -12,9 +12,12 @@ function myClick() {
 }
 
 ////////////////       Fetching      //////////////////////
+const spinner = document.getElementById("loader--spinner");
+
 var list = document.querySelector("first-list-table diff-first-list-tle");
 
 const getTodoItems = async () => {
+  spinner.style.display = "block";
   try {
     const response = await window.axios.get(
       "https://cors-any-where-code-mena.herokuapp.com/https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest",
@@ -25,11 +28,10 @@ const getTodoItems = async () => {
       }
     );
     const table = document.getElementById("table-inu");
-
+    spinner.style.display = "none";
     const value = response.data.data;
-    console.log(value);
     value.forEach((element) => {
-      const { name, cmc_rank, circulating_supply,symbol} = element;
+      const { name, cmc_rank, circulating_supply, symbol } = element;
 
       const a = `<tr>
             <td class="first-list-table diff-first-list-tle">
@@ -53,13 +55,13 @@ const getTodoItems = async () => {
               <div><i class="fa-solid fa-caret-down"></i></div>
               <p>${element.quote.USD.percent_change_7d.toFixed(2)}</p>
             </td>
-            <td class="mmds">$${element.quote.USD.market_cap.toFixed()} ${symbol}</td>
+            <td class="mmds">$${element.quote.USD.market_cap.toFixed()}</td>
             <td class="diff-td mmds">
-              <h2>$34,702,116,388</h2>
-              <h3>859,575 BTCBTC</h3>
+              <h2>${element.quote.USD.volume_24h.toFixed()}</h2>
+              <h3>859,575 BTC</h3>
             </td>
             <td class="mmds">
-              <h2>$ ${circulating_supply}</h2>
+              <h2>${circulating_supply.toFixed()}</h2>
               <div>
                 <div></div>
               </div>
@@ -80,4 +82,9 @@ const getTodoItems = async () => {
 
 getTodoItems();
 
-const history = async () => {};
+const onCall = () => {
+  window.axois.get(
+    "https://pro-api.coinmarketcap.com/v1/cryptocurrency/trending/gainers-losers"
+  );
+}
+onCall()
