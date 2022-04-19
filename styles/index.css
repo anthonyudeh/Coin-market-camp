@@ -395,6 +395,10 @@ body {
   color: #ea3943;
 }
 
+.fa-bars {
+  font-size: 25px;
+}
+
 .ktv-wst {
   display: flex;
   align-items: flex-start;
@@ -1395,7 +1399,11 @@ footer {
     -webkit-transform: scale(1, 1);
   }
 }
-.menu-navigation {
+#menu-navigation {
   background-color: #fff;
   height: 100vh;
+  position: fixed;
+  z-index: 10;
+  display: none;
+  width: 100vw;
 }/*# sourceMappingURL=index.css.map */
