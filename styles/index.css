@@ -1401,13 +1401,8 @@ footer {
     position: sticky;
     z-index: 100;
   }
-<<<<<<< HEAD
   .mmds,
   .last-days {
-=======
-
-  .mmds, .last-days {
->>>>>>> 685002fe2d7bacad695e96bd2a1a2a64794f30ca
     min-width: 10rem;
   }
 
