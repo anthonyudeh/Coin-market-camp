@@ -316,14 +316,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  right: 27px;
+  margin: 0 5px;
 }
 
 .cry-vts p {
   color: #fff;
   font-weight: 800;
   transform: translate(0, -0.5rem);
+  line-height: 0px;
+  margin-top: 0.5rem;
+  font-size: 20px;
 }
 
 .cards-container {
@@ -622,7 +624,7 @@ input:checked + .slider::before {
   justify-content: space-between;
   width: 100%;
   margin: 4% 0;
-  max-width: 337px;
+  max-width: 394px;
 }
 
 .main-box-content {
@@ -741,7 +743,7 @@ main {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 30rem;
+  max-width: 26rem;
 }
 
 .ket-div {
@@ -1168,6 +1170,17 @@ footer {
 
 .diff-list-type {
   width: 11.111;
+}
+
+.input-flex-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 20rem;
+  background-color: #eff2f5;
+  margin: 0 0.5rem;
+  justify-content: space-between;
+  border-radius: 7px;
 }
 
 /***** M E D I A ******* Q U E R Y *****/
