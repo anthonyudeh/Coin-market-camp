@@ -552,7 +552,8 @@ input:checked + .slider::before {
 }
 
 .diff-case {
-  width: 92%;
+  width: 100%;
+  max-width: 393px;
 }
 
 .diff-case-two {
@@ -619,8 +620,9 @@ input:checked + .slider::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 93%;
+  width: 100%;
   margin: 4% 0;
+  max-width: 337px;
 }
 
 .main-box-content {
@@ -629,6 +631,7 @@ input:checked + .slider::before {
 
 .diff-box-content {
   width: 100%;
+  max-width: 500px;
 }
 
 .up-rate span i {
@@ -690,6 +693,7 @@ main {
   margin: 0 6px;
   padding: 4px 6px;
   border-radius: 6px;
+  height: 100%;
 }
 
 .list-items-ordered li:hover {
@@ -715,11 +719,17 @@ main {
   margin: 0 1rem;
 }
 
-.list-items-ordered li:first-of-type a {
-  color: #3861fb;
-  background-color: #f0f6ff;
-  padding: 6px 7px;
-  font-weight: 600;
+.list-item-ordered-parent-container {
+  width: 100%;
+  max-width: 50rem;
+  overflow-x: scroll;
+  height: 30px;
+}
+
+.list-items-ordered {
+  width: 100%;
+  display: flex;
+  height: inherit;
 }
 
 .list-items-ordered li:first-of-type:hover {
@@ -729,8 +739,9 @@ main {
 .second-div-cont {
   display: flex;
   align-items: center;
-  width: 29%;
   justify-content: space-between;
+  width: 100%;
+  max-width: 30rem;
 }
 
 .ket-div {
@@ -1141,20 +1152,35 @@ footer {
   filter: hue-rotate(300deg) saturate(210%) brightness(0.7) contrast(170%);
 }
 
+.ordered-list-one {
+  min-width: 11.111111%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ordered-list-one a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+
+.diff-list-type {
+  width: 11.111;
+}
+
 /***** M E D I A ******* Q U E R Y *****/
 @media screen and (max-width: 1116px) {
   .language-currency {
     display: none;
   }
-
   .crypto-list-cont-diff ul {
     display: none;
   }
-
   .crypto-profile {
     display: none;
   }
-
   .serch-menu {
     display: flex;
     align-items: center;
@@ -1162,46 +1188,51 @@ footer {
     width: 12%;
     margin: 0 10px;
   }
-
   .serch-menu i:first-of-type {
     margin: 0 10px;
   }
-
   .crypto-value-detailed {
     min-width: 100rem;
   }
-
   .cryto-value-container {
     overflow-x: scroll;
   }
-
   .list-items {
     min-width: 97rem;
   }
-
-  .first-box {
-    width: 388px;
+  .diff-box-three {
+    position: relative;
   }
-
+  .diff-box-one {
+    position: relative;
+  }
+  .diff-box-two {
+    position: relative;
+  }
+  .first-box {
+    width: 32.33%;
+    margin: 1% 0.5%;
+  }
+  .box-header {
+    width: 100%;
+  }
   .box-header h2 {
     font-size: 12px;
+    white-space: nowrap;
+    margin: 0 3px;
   }
-
   .general-odogwu {
     flex-direction: column;
     align-items: baseline;
   }
-
   .main-foot-list {
     width: 100%;
     flex-wrap: wrap;
   }
-
   .general-odogwu img {
     width: 31%;
     margin-bottom: 1.3rem;
   }
-
   .foot-list {
     min-width: 25%;
   }
@@ -1210,63 +1241,47 @@ footer {
   .list-items-ordered {
     display: none;
   }
-
   .tst-ogg {
     display: none;
   }
-
   .list-items {
     min-width: 100%;
     max-width: 100%;
   }
-
   .ket-disk {
     display: none;
   }
-
   .second-div-cont {
     width: 28%;
   }
-
-  .box-general-content {
-    width: 78%;
-  }
-
   .button-cont {
     flex-direction: column;
     justify-content: flex-start;
     align-items: baseline;
   }
-
   .first-section input {
     margin-bottom: 1.5rem;
   }
-
   .jex-box {
     width: 100%;
   }
-
   th span {
     display: none;
   }
-
   .diff-camp-name {
     position: -webkit-sticky;
     position: sticky;
     z-index: 100;
   }
-
   .first-list-table {
     position: -webkit-sticky;
     position: sticky;
     z-index: 100;
   }
-
   .mmds,
 .last-days {
     min-width: 10rem;
   }
-
   main {
     overflow-x: scroll;
   }
@@ -1275,49 +1290,38 @@ footer {
   .btn-container-info-on-graph {
     display: none;
   }
-
   section.diff-section {
     flex-direction: column;
   }
-
   .first-section {
     width: 100%;
   }
-
   .first-section input {
     width: 100%;
   }
-
   .button-cont {
     width: 100%;
   }
-
   .first-section button {
     width: 100%;
   }
-
   .ktv-wst {
     align-items: baseline;
     flex-direction: column;
   }
-
   .second-div-cont {
     width: 51%;
     justify-content: end;
   }
-
   .list-items {
     padding: 10px 5px;
   }
-
   .svt-btn {
     display: none;
   }
-
   .ktv-wst-p h2 {
     font-size: 20px;
   }
-
   .ktv-wst-p p {
     margin-bottom: 1.5rem;
     font-size: 14px;

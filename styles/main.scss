@@ -381,7 +381,8 @@ input:checked + .slider::before {
 }
 
 .diff-case {
-  width: 92%;
+  width: 100%;
+  max-width: 393px;
 }
 
 .diff-case-two {
@@ -446,8 +447,9 @@ input:checked + .slider::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 93%;
+  width: 100%;
   margin: 4% 0;
+  max-width: 337px;
 }
 
 .main-box-content {
@@ -456,6 +458,7 @@ input:checked + .slider::before {
 
 .diff-box-content {
   width: 100%;
+  max-width: 500px;
 }
 
 .up-rate span i {
@@ -515,6 +518,7 @@ main {
   margin: 0 6px;
   padding: 4px 6px;
   border-radius: 6px;
+  height: 100%;
 }
 
 .list-items-ordered li:hover {
@@ -540,12 +544,20 @@ main {
   margin: 0 1rem;
 }
 
-.list-items-ordered li:first-of-type a {
-  color: #3861fb;
-  background-color: #f0f6ff;
-  padding: 6px 7px;
-  font-weight: 600;
+.list-item-ordered-parent-container{
+  width: 100%;
+  max-width: 50rem;
+  overflow-x: scroll;
+  height: 30px;
 }
+
+.list-items-ordered {
+   width: 100%;
+   display: flex;
+   height: inherit;
+}
+
+
 
 .list-items-ordered li:first-of-type:hover {
   background-color: transparent;
@@ -554,8 +566,9 @@ main {
 .second-div-cont {
   display: flex;
   align-items: center;
-  width: 29%;
   justify-content: space-between;
+  width: 100%;
+  max-width: 30rem;
 }
 
 .ket-div {
@@ -962,6 +975,25 @@ footer {
   filter: hue-rotate(300deg) saturate(210%) brightness(0.7) contrast(170%);
 }
 
+.ordered-list-one{
+  min-width: 11.111111%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+  }
+}
+
+.diff-list-type{
+  width: 11.111;
+}
+
 /***** M E D I A ******* Q U E R Y *****/
 
 @media screen and (max-width: 1116px) {
@@ -1001,12 +1033,30 @@ footer {
     min-width: 97rem;
   }
 
-  .first-box {
-    width: 388px;
+  .diff-box-three{
+    position: relative;
+  }
+
+  .diff-box-one{
+    position: relative;
+  }
+
+  .diff-box-two{
+    position: relative;
+  }
+
+  .first-box{
+    width: 32.33%;
+    margin: 1% 0.5%;
+  }
+  .box-header{
+    width: 100%;
   }
 
   .box-header h2 {
     font-size: 12px;
+    white-space: nowrap;
+    margin: 0 3px;
   }
 
   .general-odogwu {
@@ -1053,10 +1103,6 @@ footer {
 
   .second-div-cont {
     width: 28%;
-  }
-
-  .box-general-content {
-    width: 78%;
   }
 
   .button-cont {
