@@ -1207,9 +1207,88 @@ footer {
     margin-bottom: 1.5rem;
     font-size: 14px;
   }
+
+  .diff-box-three{
+    min-width: 48%;
+  }
+
+  .diff-box-one{
+    min-width: 48%; 
+  }
+
+  .diff-box-two{
+    min-width: 48%;
+  }
+
+  #btn-container-info-on-graph {
+    width: 100%;
+    max-width: 140rem;
+    overflow: scroll;
+  }
+
+  .truc-text{
+    white-space: nowrap;
+    width: 7.5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .pagination{
+    display: flex;
+    width: 15rem;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+
 }
 
 @media screen and (max-width: 645px) {
+  
+.diff-box-three{
+  min-width: 98%;
+}
+
+.diff-box-one{
+  min-width: 98%; 
+}
+
+.diff-box-two{
+  min-width: 98%;
+}
+
+#btn-container-info-on-graph {
+  width: 100%;
+  max-width: 140rem;
+  overflow: scroll;
+}
+
+.diff-case-two{
+  width: 100%;
+  max-width: 10rem;
+}
+
+.box-header{
+  max-width: 100%;
+}
+
+.box-general-content{
+  max-width: 100%;
+}
+
+.box-content{
+  max-width: 15rem;
+}
+
+.ktv-epst{
+  width: 100%;
+  max-width: 10rem;
+}
+
+.ket-div{
+  display: none;
+}
+
 }
 
 // #loader--spinner{
@@ -1290,6 +1369,7 @@ footer {
   background: rgba(245, 103, 115, 0.4);
 }
 
+
 @keyframes loader1 {
   from {
     transform: scale(0, 0);
@@ -1305,4 +1385,6 @@ footer {
   to {
     -webkit-transform: scale(1, 1);
   }
+
+  
 }
